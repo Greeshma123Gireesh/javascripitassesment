@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 32243;
+        var temp = x;
+        var rev = 0;
+        
+        while (temp !== 0) {
+            var a = temp % 10;
+            rev = (rev * 10) + a;
+            temp = Math.floor(temp / 10); // Ensure whole number division
+        }
+        
+        console.log(rev); // Output: 34223
+    </script>
+</body>
+</html>
